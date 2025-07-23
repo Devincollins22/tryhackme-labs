@@ -1,1 +1,47 @@
+OSI (Open Systems Interconnection) Model: Going Over the 7 Layers
 
+Layer 1 - Physical Layer:
+
+The Physical Layer is the first layer of the OSI model and it deals with the acutal hardware used to send data, like cables, swiitches, and radio signals.
+It's all about how the 1s and 0s(binary data) travel from one comptuer to another using electrical or light signals. This layer covers things like ethernet cables, 
+fiber optics, and Wifi signals. If there's a problem with your cable, plug, of Wifi signal, it's probably a Physical Layer issue. It doesn't care about what the data 
+is just how it moves from point A to point B.
+
+Layer 2 - Data Link:
+
+The Data Link Layer is all about making sure data gets to the right place on a local network and without errors. It takes the raw bits from the physical layer and organizes
+them into frames, which are like small packages of data. It also helps fix basic errors and decides which devices can talk on the network at what time.
+This layer usues MAC addresses (Unique IDs for Devices) to help send data to the correct computer. Think of it like a teacher calling on one student at a time so 
+everyone can speak clearly.
+
+Layer 3 - Network Layer:
+
+The Network Layer is in charge of finding the best way to send data from one computer to another, even if they're far apart. It uses IP addesses 
+(kind of like street addresses) to figure out where the data needs to go. This layer helps route data through different networks, using routers to pass it along. If
+the Dtat Link Layer is about talking to people in the same room, the Network Layer is like mailing a letter across the country to a friend.
+
+Layer 4 - Transport Layer:
+
+The Transport Layer makes sure data gets from one computer to another completely and in the right order. It breaks large pieces of data into smaller parts (called
+segments) and reasembles them on the other side. This layer is also responsible for making sure nothing is missing or broken during delivery. Two common protocols
+used here are TCP (Transmission Control Protocol), which checks for accuracy and resends lost pieces, and UDP (User Datagram Protocol), which is faster but doesn't double-chece
+check the data. Think of it like sending mail- TCP is like certified mail wwith tracking, and UDP is like regular mail that just gets dropped off.
+
+Layer 5 - Session Layer:
+
+The Session Layer helps two devices start, manage, and end a converstation or connection. It keeps track of who is talking and make sure the communication
+stays organized, especially when lots of data is being shared at once. If the connections gets interupted, this layer helps restart the session without losing all
+the progress. It's kind of like being on a zoom call- it handles the setup, keeps the call going, and knows when to hang up.
+
+Layer 6 - Presentation Layer:
+
+The presentation layer is like a translator for computers. It makes sure the data being sent can be understood by the receiver, evenif the systems are different.
+This layer handles things lke file formats(PDF, JPEG) and encryption or decryption, so your data stays safe and makes sense when it gets to the other
+side. It's what helps the computers talk dearly, even if they speak different "laguages".
+
+Layer 7 - Application Layer:
+
+The Application Layer is the top layer of the OSI Model and the one closest to users. This is where apps like web browsers, email. and messaging software
+connect to the network. It's not the app itself, but the layer that makes netwrok services available to the app. For example, when you open Google Chrome
+and go to a website, this layer handles the HTTP request to load the page. It supports things like file trnasfers, emails, and remote logins. Some protocols
+used in this layer include HTTP, FTP, SMTP, DNS.,
