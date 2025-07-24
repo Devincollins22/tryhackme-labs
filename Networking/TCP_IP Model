@@ -1,0 +1,18 @@
+TCP/Ip Model - QUick Notes
+
+TCP/IP = Transmission Control Protocol/Internet Protocol
+
+- Developed by the U.S Department of Defense in the 1970s
+- Designed to keep networks running even during outgaes or attacks
+- Real-world version of the OSI Model, with 4 main layers(sometims 5)
+
+Layers(Top to Bottom):
+1. Application Layer - Combines OSI layers 5-y (apps like HTTP, FPT, email)
+2. Transport Layer - Handles data transfer (TCP = reliable, UDP = fast).
+3. Internet Layer - Routing and addressing (IP, ICMP, IPSec)
+4. Link Layer - Local netwrok access (Ethernet, Wi-FI)
+5. (Optional) Physical Layer - Cables,signals
+
+
+# Layers work together to send and recieve data across networks
+# Used every day in modern internet communication
