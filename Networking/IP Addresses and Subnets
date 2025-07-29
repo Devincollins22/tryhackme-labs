@@ -1,0 +1,42 @@
+IP Addressing and Netwroking Basics:
+
+What is an IP Address?
+- A unique identifier assigned to each device on a network.
+- Works like a home address- used to send/receive data.
+- Most common type: IPv4 (ex. 192.168.0.1)
+- IPv4 = 4 octets(32 bits) = values between 0 -255 per octet
+-------------------------------------------------------------------------------
+Network vs Brodcast Address:
+- 192.168.1.0 = Network address
+- 192.168.1.255 = Broadcast address
+- Used to target all devices on the network
+--------------------------------------------------------------------------------
+Find your IP Address:
+- Windows: ipconfig
+- Linux/macOS: ifconfig or ip a s
+
+Example output:
+IP: 192.168.66.89
+Subnet Mask: 255.255.255.0 or /24
+Broadcast: 192.168.66.255
+---------------------------------------------------------------------------------
+Subnet Mask:
+- Used to seperate network and host parts of the address
+- /24 = 255.255.255.0 - 256 IPs (254 usable)
+- /24 means first 3 Octets are fixed
+---------------------------------------------------------------------------------
+Private vs Public IPs
+Private IP Ranges:
+- 10.0.0.0 - 10.255.255.255 (10/8)
+- 172.16.0.0 -172.31.255.255
+- 192.168.0.0 - 192.168.255.255
+Private = internal network only
+Public = accessible over the internet
+---------------------------------------------------------------------------------
+Routers and Routing:
+- A router acts like a post office
+- It forwards packets between networks
+- Works at OSI Layer #
+- Reads the destination IP address and picks the next best hop
+
+
