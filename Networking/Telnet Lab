@@ -1,0 +1,53 @@
+Telnet Lab Notes:
+- Telnet is a protocol to connect remotely to servers via TCP, allowing text commands to be sent and received
+- It operates on different ports depending on the service:
+      - Echo server - port 7
+      - Daytime server - port 13
+      - HTTP (web) server - port 80
+- Using Telnet to connect:
+  - Command format: telnet [IP adress] [port]
+  - Example: telnet 10.10.122.74 7 connects to the Echo server
+- Echo server:
+    - Echoes back everything you send.
+    - Useful to test conncectivit
+    - Not secure, typically diabled in production
+- Daytime server:
+    - Returns current date and time
+    - Connection closes after sending the response
+- HTTP server:
+  - Use telnet to manually send an HTTP request
+    - Send GET / HTTP/1.1 and specif a Host: header
+    - Press Entire twice after the request 
+    - The server responds with HTTP headers and webpage content.
+    - Response contains server information (name and version).
+
+
+Telnet Exercise - TryHackMe
+- Start the AttackBox and target machine; wait ~2 mins for both to boot.
+- Use telnet <target-ip> <port> to connect to services on the target machine.
+
+Tested three servers:
+- Echo server (port 7): echoes back sent text.
+- Daytime server (port 13): sends current date/time, then closes connection.
+- HTTP server (port 80): serves webpages, accepts HTTP commands.
+
+To connect to HTTP server:
+- Use telnet 10.10.122.74 80
+
+Send HTTP request:
+
+vbnet
+Copy
+Edit
+GET / HTTP/1.1
+Host: telnet.thm
+
+(Note the blank line after Host header)
+
+Server response contains HTTP headers and page content.
+
+Extracted HTTP server info: lighttpd/1.4.63
+
+Found flag on the webpage: THM{TELNET_MASTER}
+
+Exit telnet using CTRL + ] then quit
