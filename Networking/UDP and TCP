@@ -1,0 +1,15 @@
+Transport Layer Notes (TCP/IP Model)
+- UDP (User Datagram Protocol):
+    - Connectionless and faster
+    - No delivery confirmation or reliability
+    - Common for streaming, DNS, and VoIP.
+    - Uses port numbers (1-65535) to identify processes.
+- TCP (Transmission Control Protocol):
+    - Connection- oriented and reliable 
+    - Uses a three-way handshake (SYN -> SYN-ACK -> ACK) to establish connection
+    - Ensures ordered delivery with sequence numbers and acknowledgements.
+    - Common for HTTP, HTTPA, FTP, and email.
+- Port Numbers:
+    - Range from 1 to 65535 (2 Octets)
+    - Port 0 is reserved
+    - Help differentiate between mutipleservices on the same host
