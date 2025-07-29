@@ -1,0 +1,20 @@
+Encapsulation and Life of a Packet:
+- Encapsulation is when each OSI/TCP layer adds its own header (and sometimes trailer) to the data before sending it to th elayer below
+- Application Layer generates user data -> passed down through the stack
+- Internet layer adds an IP header, creating an IP packet.
+- Link layer (Ethernet/WiFi) adds a frame header and trailer -> creates a frame.
+
+📦 Life of a Packet Example (TryHackMe search):
+1. User types in a search.
+
+2. App formats HTTP request.
+
+3. TCP sets up 3-way handshake.
+
+4. IP layer adds source/destination IPs.
+
+5. Link layer encapsulates it in a frame.
+
+6. Routers forward the packet toward the server.
+
+7. Packet is decapsulated and interpreted by the server.
